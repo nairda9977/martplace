@@ -58,6 +58,38 @@
         text-transform: uppercase;
     }
 }
+.search__inner-form{
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    input{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid rgb(217, 223, 229);
+        height: 44px;
+        font-size: 15px;
+        line-height: 30px;
+        padding-left: 26px; 
+        outline: none;
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+      
+        border: none;
+        height: 44px;
+        background-color: $blue;
+        border-radius: 30px;
+        width: 70px;
+    }
+}
+
+
+
+
 
 
 
