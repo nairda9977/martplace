@@ -14,6 +14,10 @@ body{
     font-weight: 500;
     font-size: 16px;
 }
+html,
+body {
+	height: 100%;
+}
 ul, li{
     list-style: none;
     padding: 0;
@@ -47,4 +51,40 @@ color: #555555;
 margin-bottom: 56px;
 text-align: center;
 margin: 0 auto 60px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.breadcrumbs__inner{
+    li{
+        display: inline-block;
+        position: relative;
+        &+li{
+            margin-left: 15px;
+            &::before{
+                content: "/";
+                position: absolute;
+                color: #fff;
+                left: -10px;
+            }
+        }
+    }
+    a{
+        color: #fff;
+    }
+    .breadcrumbs__list li:last-child{
+        a, span{
+            color: #bfcad7;
+        }
+
+    }
 }
