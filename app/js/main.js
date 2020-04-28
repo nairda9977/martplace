@@ -31,3 +31,15 @@ $(function(){
   });
     
 })
+
+$('.new-product__menu-list').on('click', function(){
+    $('.product__item-box').addClass('list'),
+        $('.new-product__menu-list').addClass('active'),
+        $('.new-product__menu-grid').removeClass('active')
+})
+
+$('.new-product__menu-grid').on('click', function(){
+   $('.product__item-box').removeClass('list'),
+    $('.new-product__menu-grid').addClass('active'),
+      $('.new-product__menu-list').removeClass('active') 
+})
